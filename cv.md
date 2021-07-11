@@ -51,3 +51,21 @@ class TodoListHeader extends React.Component {
 export default TodoListHeader;
 © 2021 GitHub, Inc.
 ```
+
+### Work experience
+
+There is no large commercial development experience (I made a couple of sites on Wordpress, made minor edits to the application on React.js)
+
+At the moment I am finishing my studies at it-incubator.by and started a course on JavaScript on the RS School platform,  read articles on https://learn.javascript.ru
+
+I practice the acquired knowledge on educational projects, solve tasks at https://www.codewars.com
+
+GitHub - https://github.com/EugeneShatalin
+
+###Education
+
+Institute of Management, Astana
+Degree: specialist
+Specialization: systems engineer
+
+#### Level of English - A1
