@@ -13,3 +13,41 @@ Kazakhstan, Yereymentau, st. Zhantay batyr, 60, apt. 20. Tel .: + 7-705-757-5455
 • Experience in using SASS, Gulp and various additional libraries for React.js
 • Little experience with languages: C ++, PHP.
 • Little experience in developing sites on CMS WordPress and Osclass Evolution using MySQL databases.
+
+### An example of my code Codewars
+
+```JavaScript
+function solution(number){
+  var sum = 0;
+
+  for(var i = 1;i< number; i++){
+    if(i % 3 == 0 || i % 5 == 0){
+      sum += i
+    }
+  }
+  return sum;
+}
+```
+
+### An example of my code React.js
+
+```JavaScript
+import React from 'react';
+
+class TodoListHeader extends React.Component {
+    render = () => {
+        return (
+            <div className="todoList-header">
+                <h3 className="todoList-header__title">What to Learn</h3>
+                <div className="todoList-newTaskForm">
+                    <input type="text" placeholder="New task name"/>
+                    <button>Add</button>
+                </div>
+            </div>
+        );
+    }
+}
+
+export default TodoListHeader;
+© 2021 GitHub, Inc.
+```
