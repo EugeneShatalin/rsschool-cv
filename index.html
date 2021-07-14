@@ -40,8 +40,46 @@
     </section>
 
     <section>
-      <h2></h2>
-      <p></p>
+      <h2>An example of my code</h2>
+
+      <h3>Codewars</h3>
+      <pre>
+        <code>
+          function solution(number){
+            var sum = 0;
+
+            for(var i = 1;i< number; i++){
+              if(i % 3 == 0 || i % 5 == 0){
+                sum += i
+              }
+            }
+            return sum;
+          }
+        </code>
+      </pre>
+
+      <h3>React.js</h3>
+      <pre>
+        <code>
+          import React from 'react';
+
+          class TodoListHeader extends React.Component {
+              render = () => {
+                  return (
+                    &lt;div className="todoList-header"&gt;
+                          &lt;h3 className="todoList-header__title"&gt;What to Learn&lt;/h3&gt;
+                          &lt;div className="todoList-newTaskForm"&gt;
+                              &lt;input type="text" placeholder="New task name"/&gt;
+                              &lt;button&gt;Add&lt;/button&gt;
+                          &lt;/div&gt;
+                      &lt;/div&gt;
+                  );
+              }
+          }
+
+          export default TodoListHeader;
+        </code>
+      </pre>
     </section>
 
     <section>
