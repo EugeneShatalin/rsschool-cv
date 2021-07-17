@@ -60,7 +60,7 @@ text-decoration: none;
 
 .aside-content {
   width: 350px;
-  background-color: cadetblue;
+  background-color: #9eacc9;
   padding: 20px;
   flex-shrink: 0;
 }
@@ -111,3 +111,38 @@ text-decoration: none;
   margin-right: 5px;
 }
 
+.section-content {
+  font-size: 22px;
+  padding: 20px;
+}
+
+.section-content p{
+  margin-bottom: 10px;
+}
+
+.section-content h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #6f4947;
+}
+
+.section-content li {
+  margin-bottom: 10px;
+}
+
+.section-content li::before{
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(img/check.png);
+  background-size:20px;
+  margin-right: 10px;
+}
+
+.section-content code {
+  display: block;
+  background-color: #b1d5fa;
+
+}
