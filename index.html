@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+<div class="wrapper">
+  <main class="main-content">
+
+    <aside class="aside-content">
+      <figure>
+        <img src="/img/photo.jpg" alt="Photo Shatalin Yevgeniy" class="my-photo">
+      </figure>
+
+      <h1>Shatalin Yevgeniy <br> <span>JavaScript developer</span></h1>
+
+      <h2>My contacts:</h2>
+      <ul class="contacts">
+        <li>
+          <a href="https://t.me/YevgenyShatalin">
+            <figure>
+              <img src="/img/telegram.png" alt="telegra" class="social-img">
+              <span>Telegram</span>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:shatalin_ei@mail.ru">
+            <figure>
+              <img src="/img/e-mail.png" alt="e-mail" class="social-img">
+              <span>E-mail</span>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="tel:+77057575455">
+            <figure>
+              <img src="/img/phone-call.png" alt="phone" class="social-img">
+              <span>+7-705-757-5455</span>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/yevgeniy-shatalin/">
+            <figure>
+              <img src="/img/free-icon-linkedin-logo-61109.png" alt="linkedin" class="social-img">
+              <span>LinkedIn</span>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/EugeneShatalin">
+            <figure>
+              <img src="/img/free-icon-github-sign-25657.png" alt="GitHub" class="social-img">
+              <span>GitHub</span>
+            </figure>
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+<div>
+    <section class="section-content">
+      <h2>About me</h2>
+      <p>At the moment I work as a communications engineer, and I have been familiar with programming for a long time. I have a specialized higher education. After graduating from the university, there was not opportunity to get a job as a programmer, since this area was not very developed in our country at that time. But all the time I tried to study something, wrote something in C ++, PHP, made simple sites for my acquaintances. Now I decided to finally become a developer, while I am intensively studying frontend and React.js. In the future, I will study Node.js and become a full-stack JavaScript developer.</p>
+    </section>
+
+    <section class="section-content">
+      <h2>English level and education</h2>
+      <p>My English level is A1.</p>
+      <p>I study English every day. I hope that I will be at least A2 by the end of the year.</p>
+      <p>I have a higher technical education. I graduated from the Institute of "Management" in the city of Nur-Sultan. Specialty: system engineer.</p>
+    </section>
+
+    <section class="section-content">
+      <h2>Hard skills</h2>
+      <ul>
+        <li>Good command of JavaScript, TypeScript, HTML hypertext markup language, CSS style sheet language.</li>
+        <li>I have a good command of the React.js framework (I mostly write and study on it now).</li>
+        <li>Experience in writing unit tests, test-driven development - TDD.</li>
+        <li>Experience in using SASS, Gulp and various additional libraries for React.js</li>
+        <li>Little experience with languages: C ++, PHP.</li>
+        <li>Little experience in developing sites on CMS WordPress and Osclass Evolution using MySQL databases.</li>
+      </ul>
+    </section>
+
+    <section class="section-content">
+      <h2>An example of my code</h2>
+
+      <h3>Codewars</h3>
+      <pre>
+        <code>
+          function solution(number){
+            var sum = 0;
+
+            for(var i = 1;i &lt; number; i++){
+              if(i % 3 == 0 || i % 5 == 0){
+                sum += i
+              }
+            }
+            return sum;
+          }
+        </code>
+      </pre>
+
+      <h3>React.js</h3>
+      <pre>
+        <code>
+          import React from 'react';
+
+          class TodoListHeader extends React.Component {
+              render = () => {
+                  return (
+                    &lt;div className="todoList-header"&gt;
+                          &lt;h3 className="todoList-header__title"&gt;What to Learn&lt;/h3&gt;
+                          &lt;div className="todoList-newTaskForm"&gt;
+                              &lt;input type="text" placeholder="New task name"/&gt;
+                              &lt;button&gt;Add&lt;/button&gt;
+                          &lt;/div&gt;
+                      &lt;/div&gt;
+                  );
+              }
+          }
+
+          export default TodoListHeader;
+        </code>
+      </pre>
+    </section>
+
+    <section class="section-content">
+      <h2>Work experience</h2>
+      <p>
+        There is no large commercial development experience (I made a couple of sites on Wordpress, made minor edits to the application on React.js)
+      </p>
+      <p>
+        At the moment I am finishing my studies at it-incubator.by and started a course on JavaScript on the RS School platform,  read articles on <a href="https://learn.javascript.ru">https://learn.javascript.ru</a>
+      </p>
+      <p>I
+           practice the acquired knowledge on educational projects, solve tasks at <a href="https://www.codewars.com">https://www.codewars.com</a>>
+      </p>
+    </section>
+    </div>
+
+  </main>
+
+  <footer class="footer-content">
+    <p>&copy; Shatalin Yevgeniy 2021</p>
+
+    <figure>
+      <a href="https://github.com/EugeneShatalin">
+        <img src="/img/free-icon-github-sign-25657.png" alt="github-logo" class="github">
+        <span>My GitHub</span>
+      </a>
+    </figure>
+
+    <figure>
+      <a href="https://rs.school/js/">
+        <img src="https://rs.school/images/rs_school_js.svg" alt="The Rolling Scopes" class="rs-school">
+      </a>
+    </figure>
+
+  </footer>
+</div>
+</body>
+</html>
