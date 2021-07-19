@@ -102,10 +102,10 @@ text-decoration: none;
 }
 
 .contacts a {
-  color: black;
-  font-size: 26px;
   display: flex;
   align-items: center;
+  color: black;
+  font-size: 26px;
 }
 
 .social-img {
