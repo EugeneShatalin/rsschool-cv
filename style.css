@@ -104,6 +104,8 @@ text-decoration: none;
 .contacts a {
   color: black;
   font-size: 26px;
+  display: flex;
+  align-items: center;
 }
 
 .social-img {
