@@ -1,1 +1,1 @@
-https://EugeneShatalin.github.io/rsschool-cv/
+https://EugeneShatalin.github.io/rsschool-cv/cv
