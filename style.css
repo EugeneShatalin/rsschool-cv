@@ -177,3 +177,38 @@ text-decoration: none;
   width: 50px;
   margin-right: 10px;
 }
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-block {
+  width: 40%;
+  text-align: center;
+  background-color: #b1d5fa;
+  padding: 10px;
+}
+
+.project-block__img {
+  width: 70%;
+  object-fit: cover;
+}
+
+.project-block__des {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.project-block__des-elem {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.project-block__des-elem-tech {
+  margin-top: 15px;
+  font-size: 20px;
+}
