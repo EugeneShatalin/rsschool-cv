@@ -3,26 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>CV</title>
   <link rel="stylesheet"
   href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/styles/github.min.css">
 <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js"></script>
   <script>hljs.highlightAll();</script>
 </head>
 <body>
-<div class="wrapper">
+ <div class="wrapper">
+  <header class="header">
+    <div class="menu__btn">
+      <span></span>
+    </div>
+    <nav class="nav">
+      <ul class="nav-menu">
+        <li class="nav-menu__elem"><a href="#aboutme">About me</a></li>
+        <li class="nav-menu__elem"><a href="#english">education</a></li>
+        <li class="nav-menu__elem"><a href="#hard-skills">Hard skills</a></li>
+        <li class="nav-menu__elem"><a href="#my-code">my code</a></li>
+        <li class="nav-menu__elem"><a href="#my-projects">My projects</a></li>
+        <li class="nav-menu__elem"><a href="#work-experience">Work experience</a></li>
+      </ul>
+    </nav>
+  </header>
   <main class="main-content">
 
     <aside class="aside-content">
-      <figure>
-        <img src="img/photo.jpg" alt="Photo Shatalin Yevgeniy" class="my-photo">
-      </figure>
+      <div>
+        <figure>
+          <img src="img/photo.jpg" alt="Photo Shatalin Yevgeniy" class="my-photo">
+        </figure>
 
-      <h1>Shatalin Yevgeniy <br> <span>JavaScript developer</span></h1>
+        <h1>Shatalin Yevgeniy <br> <span>JavaScript developer</span></h1>
+      </div>
 
-      <h2>My contacts:</h2>
+      <div>
+        <h2>My contacts:</h2>
       <ul class="contacts">
         <li>
           <a href="https://t.me/YevgenyShatalin">
@@ -73,23 +91,25 @@
           </a>
         </li>
       </ul>
+      </div>
+
     </aside>
 
-<div>
+<div class="right-section">
     <section class="section-content">
-      <h2>About me</h2>
+      <h2 id="aboutme">About me</h2>
       <p>At the moment I work as a communications engineer, and I have been familiar with programming for a long time. I have a specialized higher education. After graduating from the university, there was not opportunity to get a job as a programmer, since this area was not very developed in our country at that time. But all the time I tried to study something, wrote something in C ++, PHP, made simple sites for my acquaintances. Now I decided to finally become a developer, while I am intensively studying frontend and React.js. In the future, I will study Node.js and become a full-stack JavaScript developer.</p>
     </section>
 
     <section class="section-content">
-      <h2>English level and education</h2>
+      <h2 id="english">English level and education</h2>
       <p>My English level is A1.</p>
       <p>I study English every day. I hope that I will be at least A2 by the end of the year.</p>
       <p>I have a higher technical education. I graduated from the Institute of "Management" in the city of Nur-Sultan. Specialty: system engineer.</p>
     </section>
 
     <section class="section-content">
-      <h2>Hard skills</h2>
+      <h2 id="hard-skills">Hard skills</h2>
       <ul>
         <li>Good command of JavaScript, TypeScript, HTML hypertext markup language, CSS style sheet language.</li>
         <li>I have a good command of the React.js framework (I mostly write and study on it now).</li>
@@ -101,7 +121,7 @@
     </section>
 
     <section class="section-content">
-      <h2>An example of my code</h2>
+      <h2 id="my-code">An example of Work experience</h2>
 
       <h3>Codewars</h3>
       <pre>
@@ -144,7 +164,7 @@
     </section>
 
     <section class="section-content">
-      <h2>My projects</h2>
+      <h2 id="my-projects">My projects</h2>
       <div class="projects">
         <div class="project-block">
           <a href="https://eugeneshatalin.github.io/Game-squares/">
@@ -176,7 +196,7 @@
     </section>
 
     <section class="section-content">
-      <h2>Work experience</h2>
+      <h2 id="work-experience">Work experience</h2>
       <p>
         There is no large commercial development experience (I made a couple of sites on Wordpress, made minor edits to the application on React.js)
       </p>
@@ -209,6 +229,7 @@
 
   </footer>
 </div>
+<script src="js/main.js"></script>
 <script>
   console.log(
     `
@@ -218,24 +239,37 @@
 - Надпись "Document checking completed. No errors or warnings to show." +10
 вёрстка семантическая: +20
 
-В коде страницы присутствуют семантические теги HTML5, например, article, aside, figure, figcaption, footer, header, main, nav, section, используются заголовки h1-h6. Заголовок h1 может быть только один.
-2 балла за каждый уникальный семантический тег HTML5 и за каждый уникальный заголовок h1-h6, но не больше 20 баллов
+В коде страницы присутствуют семантические теги HTML5, aside, figure, footer, header, main, nav, section, используются заголовки h1-h5. +20
+
 для оформления СV используются css-стили +10
-1 балл за каждый стилизованный элемент, но не больше 10 баллов
+
 контент размещается в блоке, который горизонтально центрируется на странице. Фоновый цвет, если он есть, тянется во всю ширину страницы +10
+
 вёрстка адаптивная: ни на одном из разрешений экрана до 320px включительно не появляется горизонтальная полоса прокрутки, при этом всё содержание страницы сохраняется +10
-есть адаптивное бургер-меню. Ссылки в пунктах меню ведут на основные разделы CV. При кликах по пунктам меню реализована плавная прокрутка по якорям. При уменьшении ширины экрана меню становится адаптивным. Внешний вид адаптивного меню можно скопировать с макета музея +10
+
+есть адаптивное бургер-меню. Ссылки в пунктах меню ведут на основные разделы CV. При кликах по пунктам меню реализована плавная прокрутка по якорям. При уменьшении ширины экрана меню становится адаптивным. +10
+
 на странице СV присутствует изображение - фото или аватарка автора CV, пропорции изображения не искажены, у изображения есть атрибут alt (может быть пустым) +10
+
 контакты для связи и перечень навыков оформлены в виде списка ul > li +10
+
 CV содержит контакты для связи, краткую информацию о себе, перечень навыков, информацию об образовании и уровне английского +10
+
 CV содержит пример вашего кода (например, решение задачи с сайта codewars) с подсветкой кода. Для подсветки кода может использоваться js-библиотека, например, highlight.js +10
+
 CV содержит изображения-ссылки на выполненные вами проекты. При клике по изображению страница проекта открывается в новой вкладке. У каждого проекта есть название, небольшое описание, указан перечень используемых технологий. +10
+
 CV выполнено на английском языке +10
+
 выполнены требования к Pull Request: есть ссылка на задание, скриншот страницы СV, ссылка на деплой страницы CV на GitHub Pages, выполнена самооценка (самооценку расписываем по пунктам критериев оценки, указывая балл за каждый пункт) +10
-Вниманию проверяющих. Так как сабмитится ссылка на деплой CV, вам необходимо будет самостоятельно найти Pull Request для проверки. Для этого по ссылке в футере перейдите на гитхаб автора CV, найдите там репозиторий rsschool-cv, в нём открытый PR из ветки cv-html-css в ветку main с названием CV и проверьте его описание.
-есть видеорезюме автора CV на английском языке. Видеорезюме встраивается в страницу CV как видео, а не в виде кнопки или ссылки. Продолжительность видео 3-5 минут (±15 секунд). В описание видео на YouTube добавлена ссылка на его транскрипцию на английском языке (например, в документе Google Docs). +10
-Вниманию авторов работы. Убедитесь, что видео проигрывается и ссылка на транскрипцию открывается в режиме инкогнито браузера.
-дизайн, оформление, качество выполнения CV не ниже чем в примерах CV, приведённых в материалах к заданию (это дополнительные 10 баллов, поэтому некоторый субъективизм в оценке может присутствовать) +10
+
+Пулреквест найдете тут https://github.com/EugeneShatalin/rsschool-cv/pulls
+
+Видео не успел записать -10
+
+Думаю что - дизайн, оформление, качество выполнения CV не ниже чем в примерах CV, приведённых в материалах к заданию (это дополнительные 10 баллов, поэтому некоторый субъективизм в оценке может присутствовать) +10
+
+Итого: 150 баллов
     `
   )
 </script>
